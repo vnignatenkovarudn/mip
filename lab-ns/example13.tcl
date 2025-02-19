@@ -33,9 +33,5 @@ $ns at 0.5 "$cbr0 start"
  $ns rtmodel-at 1.0 down $n(1) $n(2)
  $ns rtmodel-at 2.0 up $n(1) $n(2)
  $ns at 4.5 "$cbr0 stop"
-
-
-
-
 $ns at 5.0 "finish"
 $ns run

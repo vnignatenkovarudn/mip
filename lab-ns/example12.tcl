@@ -21,7 +21,6 @@ $ns duplex-link $n(3) $n(2) 2Mb 10ms DropTail
 $ns duplex-link-op $n(0) $n(2) orient right-down
 $ns duplex-link-op $n(1) $n(2) orient right-up
 $ns duplex-link-op $n(2) $n(3) orient right
-
 set udp0 [new Agent/UDP]
 $ns attach-agent $n(0) $udp0
 set cbr0 [new Application/Traffic/CBR]
@@ -48,10 +47,6 @@ $ns at 0.5 "$cbr0 start"
 $ns at 1.0 "$ftp start"
 $ns at 4.0 "$ftp stop"
 $ns at 4.5 "$cbr0 stop"
-
-
-
-
 $ns at 5.0 "finish"
 $ns run
 

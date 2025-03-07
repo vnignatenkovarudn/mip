@@ -1,0 +1,37 @@
+#!/usr/bin/gnuplot -persist
+
+set encoding utf8
+set term pngcairo font "Helvetica,9"
+
+set out 'window_1.png'
+
+set title "Изменение размера окна TCP на линке 1-го источника при N=20"
+
+set xlabel "t[s]" font "Helvetica, 10"
+set ylabel "CWND [pkt]" font "Helvetica, 10"
+
+plot "WindowVsTimeRenoOne" using ($1):($2) with lines title "Размер окна TCP"
+
+set out 'window_2.png'
+
+set title "Изменение размера окна TCP на всех N источниках  при N=20"
+
+plot "WindowVsTimeRenoAll" using ($1):($2) with lines title "Размер окна TCP"
+
+set out 'queue.png'
+
+set title "Изменение размера длины очереди на линке (R1–R2)"
+
+set xlabel "t[s]" font "Helvetica, 10"
+set ylabel "Queue Length [pkt]" font "Helvetica, 10"
+
+plot "temp.q" using ($1):($2) with lines title "Текущая длина очереди"
+
+set out 'av_queue.png'
+
+set title "Изменение размера средней длины очереди на линке (R1–R2)"
+
+set xlabel "t[s]" font "Helvetica, 10"
+set ylabel "Queue Avg Length [pkt]" font "Helvetica, 10"
+
+plot "temp.a" using ($1):($2) with lines title "Средняя длина очереди"

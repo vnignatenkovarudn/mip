@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 24.8.3.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 8.5in 11in; margin: 0.79in }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+		pre { background: transparent }
+		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
+		pre.cjk { font-family: "Noto Sans Mono CJK SC", monospace; font-size: 10pt }
+		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><pre class="western">---
+## Front matter
+lang: ru-RU
+title: Лабораторная работа №10
+subtitle: Задание для самостоятельного выполнения
+author:
+  - Игнатенкова В. Н.
+institute:
+  - Российский университет дружбы народов, Москва, Россия
+
+## i18n babel
+babel-lang: russian
+babel-otherlangs: english
+
+## Formatting pdf
+toc: false
+toc-title: Содержание
+slide_level: 2
+aspectratio: 169
+section-titles: true
+theme: metropolis
+header-includes:
+ - \metroset{progressbar=frametitle,sectionpage=progressbar,numbering=fraction}
+ - '\makeatletter'
+ - '\beamer@ignorenonframefalse'
+ - '\makeatother'
+---
+
+# Информация
+
+## Докладчик
+
+:::::::::::::: {.columns align=center}
+::: {.column width=&quot;60%&quot;}
+
+  * Игнатенкова Варвара Николаевна
+  * студентка
+  * Российский университет дружбы народов
+  * [1132226497@pfur.ru](mailto:1132226497@pfur.ru)
+  * &lt;https://github.com/vnignatenkovarudn&gt;
+
+:::
+::: {.column width=&quot;25%&quot;}
+
+![](./image/photo.jpg)
+
+:::
+::::::::::::::
+## Цель работы
+
+Выполнить задание для самостоятельного выполнения.
+
+## Задание
+
+1. Построить модели с помощью CPNTools задачи об обедающих мудрецах.
+2. Вычислитепространство состояний. Сформируйте отчёт о пространстве состояний и проанализируйте его. Постройте граф пространства состояний.
+
+## Выполнение лабораторной работы
+
+Пять мудрецов сидят за круглым столом и могут пребывать в двух состояниях —
+думать и есть. Между соседями лежит одна палочка для еды. Для приёма пищи
+необходимы две палочки. Палочки — пересекающийся ресурс. Необходимо синхро
+низировать процесс еды так, чтобы мудрецы не умерли с голода.
+
+ 1. Рисуем граф сети. Для этого с помощью контекстного меню создаём новую сеть,
+ добавляем позиции, переходы и дуги (рис. 1).
+
+ Начальные данные:
+ 
+ – позиции: мудрец размышляет (philosopher thinks), мудрец ест (philosopher eats),
+ палочки находятся на столе (sticks on the table)
+ 
+ – переходы: взять палочки (take sticks), положить палочки (put sticks)
+
+## Выполнение лабораторной работы
+
+![ Рис. 1. Граф сети задачи об обедающих мудрецах](image/1.png){#fig:001 width=70%}
+
+## Выполнение лабораторной работы
+
+ 2. В меню задаём новые декларации модели(рис. 2): типы фишек, начальные значения позиций, выражения для дуг:– n—числомудрецов ипалочек (n = 5);– p—фишки,обозначающие мудрецов, имеют перечисляемый тип PH от 1 до n;– s—фишки,обозначающие палочки, имеют перечисляемый тип ST от 1 до n;– функция ChangeS(p) ставит в соответствие мудрецам палочки (возвращает номера палочек, используемых мудрецами); по условию задачи мудрецы сидят покругу и мудрец p(i) может взять i и i+1 палочки, поэтому функция ChangeS(p) определяется следующим образом:
+ fun ChangeS (ph(i))=
+ 1`st(i)++st(if = n then 1 else i+1)
+
+ ## Выполнение лабораторной работы
+
+![ Рис. 2. Задание деклараций задачи об обедающих мудрецах](image/2.png){#fig:002 width=70%}
+
+## Выполнение лабораторной работы
+
+В результате получаем работающую моделью(рис. 3)..
+
+![ Рис. 3. Модель задачи об обедающих мудрецах](image/3.png){#fig:003 width=70%}
+
+## Выполнение лабораторной работы
+
+После запуска модели наблюдаем, что одновременно палочками могут воспользоваться только два из пяти мудрецов (рис. 4).
+
+## Выполнение лабораторной работы
+
+![ Рис. 4. Запуск модели задачи об обедающих мудрецах](image/4.png){#fig:004 width=70%}
+
+## Выполнение лабораторной работы
+
+Упражнение. Вычислите пространство состояний. Сформируйте отчёт о пространстве состояний и проанализируйте его. Постройте граф пространства состояний.
+
+## Выполнение лабораторной работы
+
+![ Рис. 5. Граф пространства состояний](image/5.png){#fig:005 width=70%}
+
+## Выполнение лабораторной работы
+
+Отчет:
+
+CPN Tools state space report for:
+/home/openmodelica/Desktop.cpn
+Report generated: Sat Apr 12 20:05:41 2025
+
+
+ Statistics
+
+## Выполнение лабораторной работы
+
+  State Space
+     Nodes:  11
+     Arcs:   30
+     Secs:   0
+     Status: Full
+
+## Выполнение лабораторной работы
+
+  Scc Graph
+     Nodes:  1
+     Arcs:   0
+     Secs:   0
+
+## Выполнение лабораторной работы
+
+ Boundedness Properties
+
+  Best Integer Bounds
+                             Upper      Lower
+     philosopher'philosopher_eats 1
+                             2          0
+     philosopher'philosopher_thinks 1
+                             5          3
+     philosopher'stiks_on_the_table 1
+                             5          1
+
+## Выполнение лабораторной работы
+
+  Best Upper Multi-set Bounds
+     philosopher'philosopher_eats 1
+                         1`ph(1)++
+1`ph(2)++
+1`ph(3)++
+1`ph(4)++
+1`ph(5)
+     philosopher'philosopher_thinks 1
+                         1`ph(1)++
+1`ph(2)++
+1`ph(3)++
+1`ph(4)++
+1`ph(5)
+
+## Выполнение лабораторной работы
+
+     philosopher'stiks_on_the_table 1
+                         1`st(1)++
+1`st(2)++
+1`st(3)++
+1`st(4)++
+1`st(5)
+
+## Выполнение лабораторной работы
+
+  Best Lower Multi-set Bounds
+     philosopher'philosopher_eats 1
+                         empty
+     philosopher'philosopher_thinks 1
+                         empty
+     philosopher'stiks_on_the_table 1
+                         empty
+
+## Выполнение лабораторной работы
+
+ Home Properties
+------------------------------------------------------------------------
+
+  Home Markings
+     All
+
+## Выполнение лабораторной работы
+
+ Liveness Properties
+------------------------------------------------------------------------
+
+  Dead Markings
+     None
+
+  Dead Transition Instances
+     None
+
+  Live Transition Instances
+     All
+
+
+ Fairness Properties
+------------------------------------------------------------------------
+       philosopher'put_stiks 1
+                         Impartial
+       philosopher'take_stiks 1
+                         Impartial
+
+
+
+## Выводы
+
+Мы построили модель задачи о мудрецах с помощью CPNTools и проанализировали результат.</pre>
+</body>
+</html>

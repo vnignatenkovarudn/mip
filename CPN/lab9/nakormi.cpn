@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE workspaceElements PUBLIC "-//CPN//DTD CPNXML 1.0//EN" "http://www.daimi.au.dk/~cpntools/bin/DTD/6/cpn.dtd">
+
+<workspaceElements>
+  <generator tool="CPN Tools"
+             version="2.3.4"
+             format="6"/>
+  <cpnet>
+    <globbox>
+      <block id="ID1">
+        <id>Standard declarations</id>
+        <color id="ID120775">
+          <id>s</id>
+          <unit>
+            <with>
+              <id>student</id>
+            </with>
+          </unit>
+          <layout>colset s=unit with student;</layout>
+        </color>
+        <color id="ID120531">
+          <id>p</id>
+          <unit>
+            <with>
+              <id>pasty</id>
+            </with>
+          </unit>
+          <layout>colset p=unit with pasty;</layout>
+        </color>
+        <var id="ID120298">
+          <type>
+            <id>s</id>
+          </type>
+          <id>x</id>
+          <layout>var x:s;</layout>
+        </var>
+        <var id="ID119981">
+          <type>
+            <id>p</id>
+          </type>
+          <id>y</id>
+          <layout>var y:p;</layout>
+        </var>
+        <ml id="ID119690">val init_stud = 3`student;
+          <layout>val init_stud = 3`student;</layout>
+        </ml>
+        <ml id="ID119507">val init_food = 5`pasty;
+          <layout>val init_food = 5`pasty;</layout>
+        </ml>
+        <color id="ID85042">
+          <id>UNIT</id>
+          <unit/>
+          <layout>colset UNIT = unit;</layout>
+        </color>
+        <color id="ID3">
+          <id>INT</id>
+          <int/>
+        </color>
+        <color id="ID4">
+          <id>BOOL</id>
+          <bool/>
+        </color>
+        <color id="ID5">
+          <id>STRING</id>
+          <string/>
+        </color>
+      </block>
+    </globbox>
+    <page id="ID6">
+      <pageattr name="nakormi_studenta"/>
+      <place id="ID118350">
+        <posattr x="-93,000000"
+                 y="152,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>food</text>
+        <ellipse w="60,000000"
+                 h="40,000000"/>
+        <token x="-10,000000"
+               y="0,000000"/>
+        <marking x="0,000000"
+                 y="0,000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="ID118351">
+          <posattr x="-64,000000"
+                   y="128,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.3.4">p</text>
+        </type>
+        <initmark id="ID118352">
+          <posattr x="-40,500000"
+                   y="175,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.3.4">init_food</text>
+        </initmark>
+      </place>
+      <place id="ID118423">
+        <posattr x="-88,000000"
+                 y="62,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>hungry
+student</text>
+        <ellipse w="88,000000"
+                 h="40,000000"/>
+        <token x="-10,000000"
+               y="0,000000"/>
+        <marking x="0,000000"
+                 y="0,000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="ID118424">
+          <posattr x="-50,500000"
+                   y="38,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.3.4">s</text>
+        </type>
+        <initmark id="ID118425">
+          <posattr x="-26,500000"
+                   y="85,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.3.4">init_stud</text>
+        </initmark>
+      </place>
+      <place id="ID118844">
+        <posattr x="215,000000"
+                 y="118,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>satisfied
+student</text>
+        <ellipse w="96,000000"
+                 h="40,000000"/>
+        <token x="-10,000000"
+               y="0,000000"/>
+        <marking x="0,000000"
+                 y="0,000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="ID118845">
+          <posattr x="254,500000"
+                   y="94,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.3.4">s</text>
+        </type>
+        <initmark id="ID118846">
+          <posattr x="283,000000"
+                   y="141,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.3.4"/>
+        </initmark>
+      </place>
+      <trans id="ID118505"
+             explicit="false">
+        <posattr x="61,000000"
+                 y="118,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>eat</text>
+        <box w="60,000000"
+             h="40,000000"/>
+        <binding x="7,000000"
+                 y="-3,000000"/>
+        <cond id="ID118506">
+          <posattr x="22,000000"
+                   y="149,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.3.4"/>
+        </cond>
+        <time id="ID118507">
+          <posattr x="105,500000"
+                   y="149,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.3.4"/>
+        </time>
+        <code id="ID118508">
+          <posattr x="125,500000"
+                   y="66,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.3.4"/>
+        </code>
+        <channel id="ID118509">
+          <posattr x="-2,500000"
+                   y="118,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.3.4"/>
+        </channel>
+      </trans>
+      <arc id="ID119165"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0,000000"
+                 y="-0,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1,000000"
+                   currentcyckle="2"/>
+        <transend idref="ID118505"/>
+        <placeend idref="ID118350"/>
+        <annot id="ID119166">
+          <posattr x="-29,500000"
+                   y="150,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.3.4">y</text>
+        </annot>
+      </arc>
+      <arc id="ID119248"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0,000000"
+                 y="-0,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1,000000"
+                   currentcyckle="2"/>
+        <transend idref="ID118505"/>
+        <placeend idref="ID118423"/>
+        <annot id="ID119249">
+          <posattr x="-0,500000"
+                   y="106,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.3.4">x</text>
+        </annot>
+      </arc>
+      <arc id="ID119334"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0,000000"
+                 y="-0,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1,000000"
+                   currentcyckle="2"/>
+        <transend idref="ID118505"/>
+        <placeend idref="ID118844"/>
+        <annot id="ID119335">
+          <posattr x="129,000000"
+                   y="129,000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="2.3.4">x</text>
+        </annot>
+      </arc>
+      <ssarc id="ID121331"
+             order="1"
+             number="1">
+        <posattr x="0,000000"
+                 y="-0,000000"/>
+        <fillattr colour="White"
+                  pattern="Solid"
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="0"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1,000000"
+                   currentcyckle="2"/>
+        <source idref="ID121123"/>
+        <destination idref="ID121327"/>
+        <descriptor x="0,000000"
+                    y="0,000000"
+                    visible="false"
+                    dead="false">
+          <text>1:1-&gt;2 nakormi_studenta&apos;eat 1: {x=student,y=pasty}</text>
+        </descriptor>
+      </ssarc>
+      <ssarc id="ID121378"
+             order="1"
+             number="2">
+        <posattr x="0,000000"
+                 y="-0,000000"/>
+        <fillattr colour="White"
+                  pattern="Solid"
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="0"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1,000000"
+                   currentcyckle="2"/>
+        <source idref="ID121327"/>
+        <destination idref="ID121374"/>
+        <descriptor x="0,000000"
+                    y="0,000000"
+                    visible="false"
+                    dead="false">
+          <text>2:2-&gt;3 nakormi_studenta&apos;eat 1: {x=student,y=pasty}</text>
+        </descriptor>
+      </ssarc>
+      <ssarc id="ID121428"
+             order="1"
+             number="3">
+        <posattr x="0,000000"
+                 y="-0,000000"/>
+        <fillattr colour="White"
+                  pattern="Solid"
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="0"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1,000000"
+                   currentcyckle="2"/>
+        <source idref="ID121374"/>
+        <destination idref="ID121424"/>
+        <descriptor x="0,000000"
+                    y="0,000000"
+                    visible="false"
+                    dead="false">
+          <text>3:3-&gt;4 nakormi_studenta&apos;eat 1: {x=student,y=pasty}</text>
+        </descriptor>
+      </ssarc>
+      <ssnode id="ID121123"
+              number="1"
+              predecessors="0"
+              successors="1">
+        <posattr x="-293,000000"
+                 y="20,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <descriptor x="0,000000"
+                    y="0,000000"
+                    visible="true"
+                    dead="false">
+          <text>1:
+nakormi_studenta&apos;food 1: 5`pasty
+nakormi_studenta&apos;hungry_student 1: 3`student
+nakormi_studenta&apos;satisfied_student 1: empty
+</text>
+        </descriptor>
+        <roundbox w="45,000000"
+                  h="44,000000"/>
+      </ssnode>
+      <ssnode id="ID121327"
+              number="2"
+              predecessors="1"
+              successors="1">
+        <posattr x="-228,000000"
+                 y="-98,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <descriptor x="7,000000"
+                    y="-8,000000"
+                    visible="true"
+                    dead="false">
+          <text>2:
+nakormi_studenta&apos;food 1: 4`pasty
+nakormi_studenta&apos;hungry_student 1: 2`student
+nakormi_studenta&apos;satisfied_student 1: 1`student
+</text>
+        </descriptor>
+        <roundbox w="49,000000"
+                  h="38,000000"/>
+      </ssnode>
+      <ssnode id="ID121374"
+              number="3"
+              predecessors="1"
+              successors="1">
+        <posattr x="-147,000000"
+                 y="-211,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <descriptor x="0,000000"
+                    y="0,000000"
+                    visible="true"
+                    dead="false">
+          <text>3:
+nakormi_studenta&apos;food 1: 3`pasty
+nakormi_studenta&apos;hungry_student 1: 1`student
+nakormi_studenta&apos;satisfied_student 1: 2`student
+</text>
+        </descriptor>
+        <roundbox w="45,000000"
+                  h="40,000000"/>
+      </ssnode>
+      <ssnode id="ID121424"
+              number="4"
+              predecessors="1"
+              successors="0">
+        <posattr x="-62,000000"
+                 y="-329,000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <descriptor x="0,000000"
+                    y="0,000000"
+                    visible="true"
+                    dead="false">
+          <text>4:
+nakormi_studenta&apos;food 1: 2`pasty
+nakormi_studenta&apos;hungry_student 1: empty
+nakormi_studenta&apos;satisfied_student 1: 3`student
+</text>
+        </descriptor>
+        <roundbox w="45,000000"
+                  h="40,000000"/>
+      </ssnode>
+    </page>
+    <instances>
+      <instance id="ID2149"
+                page="ID6"/>
+    </instances>
+    <options>
+      <option name="outputdirectory">
+        <value>
+          <text>&lt;same as model&gt;</text>
+        </value>
+      </option>
+      <option name="repavg">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repciavg">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repcount">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repfirstval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="replastval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repmax">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repmin">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repssquare">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repssqdev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repstddev">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="repsum">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="repvariance">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="avg">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="ciavg">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="count">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="firstval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="lastval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="max">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="min">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="ssquare">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="ssqdev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="stddev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="sum">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="variance">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="firstupdate">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="interval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="lastupdate">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedavg">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedciavg">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedcount">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedfirstval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedlastval">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedmax">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedmin">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedssquare">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedssqdev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedstddev">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+      <option name="untimedsum">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="untimedvariance">
+        <value>
+          <boolean>false</boolean>
+        </value>
+      </option>
+    </options>
+    <binders>
+      <cpnbinder id="ID2222"
+                 x="326"
+                 y="198"
+                 width="769"
+                 height="531">
+        <sheets>
+          <cpnsheet id="ID2215"
+                    panx="-32,000000"
+                    pany="-179,000000"
+                    zoom="1,000000"
+                    instance="ID2149">
+            <zorder>
+              <position value="0"/>
+            </zorder>
+          </cpnsheet>
+        </sheets>
+        <zorder>
+          <position value="0"/>
+        </zorder>
+      </cpnbinder>
+    </binders>
+    <monitorblock name="Monitors"/>
+    <IndexNode expanded="true">
+      <IndexNode expanded="false"/>
+      <IndexNode expanded="false"/>
+      <IndexNode expanded="false">
+        <IndexNode expanded="false"/>
+        <IndexNode expanded="false">
+          <IndexNode expanded="false">
+            <IndexNode expanded="false">
+              <IndexNode expanded="true"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="true"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="true"/>
+              <IndexNode expanded="true"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+            </IndexNode>
+            <IndexNode expanded="false">
+              <IndexNode expanded="true"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="true"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="true"/>
+              <IndexNode expanded="true"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="false"/>
+              <IndexNode expanded="true"/>
+              <IndexNode expanded="false"/>
+            </IndexNode>
+          </IndexNode>
+          <IndexNode expanded="false">
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="true"/>
+            <IndexNode expanded="false"/>
+            <IndexNode expanded="false"/>
+          </IndexNode>
+        </IndexNode>
+      </IndexNode>
+      <IndexNode expanded="false">
+        <IndexNode expanded="false"/>
+      </IndexNode>
+      <IndexNode expanded="true">
+        <IndexNode expanded="true">
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="true"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+          <IndexNode expanded="false"/>
+        </IndexNode>
+      </IndexNode>
+      <IndexNode expanded="false"/>
+      <IndexNode expanded="true"/>
+    </IndexNode>
+  </cpnet>
+</workspaceElements>
